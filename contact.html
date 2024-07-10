@@ -22,6 +22,7 @@
         li{
             font-size: 20px;
             padding: 20px;
+            list-style-type: none;
         }
         .Home{
             margin-right: 800px;
@@ -32,9 +33,9 @@
             padding: 15px;
         }
         .Contact2{
-        padding:  50px 0px 20px 20px;
+        padding:  50px 10px 20px 20px;
         display: flex;
-        gap: 6rem;
+        gap: 5rem;
         }
         .social{
             display: flex;
@@ -55,6 +56,10 @@
             border-radius: 2rem;
             padding: 6px 12px;
         }
+        main{
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
@@ -68,14 +73,45 @@
                     <a href="./contact.html">Contact</a>
                 </li>
                 <li class="help">
-                    <a href="">Help</a>
+                    <a href="./help.html">Help</a>
                 </li>
                 <li class="More">
-                    <a href="">More</a>
+                    <a href="./More.html">More</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <h1>Healing habbit hub</h1>
+    <main>
+
+    <form action="/submit" method="post">
+        <label>Names:</label>
+        <input types="text"placeholder="please enter name" required><br><br>
+            <label>Email:</label> 
+            <input type="Email" required><br><br>
+            <label>Age:</label>
+            <input type="number" min="1"max="30" required><br><br>
+            <label>Gender</label>
+            <input type="radio" value="male">
+            <label>male</label>
+            <input type="radio" value="female">
+            <label>female</label><br><br>
+            <label>Nationality:</label>
+            <select name="nationality">
+                <option>Rwanda</option>
+                <option>United stats</option>
+                <option>Gabon</option>
+                <option>europe</option>
+                <option>others</option>
+            </select><br><br>
+            <label>Password</label>
+            <input type="password"><br><br>
+            <label>comment</label>
+            <textarea rows="3" cols="25" placeholder="please leave a comment"></textarea><br><br>
+            <input type="submit" value="submit">
+
+    </form>
+    </main>
     <div class="Contact2">
         <H2>Contact us :</H2><br>
         <p>&copy;Healinghabbithub</p>
